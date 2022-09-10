@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <style rel="stylesheet">
+
+        body {
+            font-size: 12px;
+        }
+
+        .company_tab {
+            width: 208px;
+            height: 219px;
+            border: #EEE solid 1px;
+        }
+
+        .company_title {
+            height: 40px;
+            background: #F7F7F7;
+        }
+
+        .company_title h3 {
+            font-size: 14px;
+            line-height: 40px;
+            margin-left: 10px;
+        }
+
+        h3 {
+            margin: 0px;
+        }
+
+        .fa-star {
+            font-size: 12px;
+            color: #f30213;
+        }
+
+        .evaluate_lever, .evaluate_score {
+            color: #f30213;
+        }
+
+        .company_evaluate, .company_level {
+            margin-left: 10px;
+        }
+
+        .company_level {
+            margin-top: 10px;
+        }
+
+        .company_evaluate {
+            margin-top: 10px;
+            color: #999;
+        }
+
+        .company_evaluate div {
+            margin-top: 10px;
+        }
+
+        .evaluate_score {
+            margin-left: 8px;
+        }
+
+        .evaluate_lever {
+            margin-left: 8px;
+        }
+
+        .level_stars {
+            display: inline-block;
+            margin-left: 5px;
+            background: #F7F7F7;
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-radius: 10px;
+        }
+
+        .split_line{
+            height: 1px;
+            width: 188px;
+            background-color: #E3E4E5;
+            margin: 10px auto;
+
+        }
+
+        .enterComp{
+            height: 36px;
+            width: 90px;
+            display: inline-block;
+            background: #F7F7F7;
+            border: 1px solid #EEE;
+            margin-right: 10px;
+            text-align: center;
+            line-height: 36px;
+        }
+
+        .likeComp{
+            height: 36px;
+            width: 90px;
+            display: inline-block;
+            background: #F7F7F7;
+            text-align: center;
+            border: 1px solid #EEE;
+            line-height: 36px;
+
+        }
+
+
+        .group_like{
+            display: table;
+            margin: 0 auto;
+        }
+
+        .group_like .fa-star{
+            font-size: 16px;
+            margin-right: 3px;
+        }
+
+        .fa-home{
+            color: #e33333;
+            font-size: 16px;
+            margin-right: 3px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<!--     https://item.jd.com/10030278225981.html-->
+<div class="company_tab">
+    <div class="company_title">
+        <h3>海尔快试专卖店</h3>
+
+    </div>
+    <div class="company_level">
+        <span>店铺星级</span>
+        <div class="level_stars">
+            <span class="fas fa-star"></span>
+            <span class="fas fa-star"></span>
+            <span class="fas fa-star"></span>
+            <span class="fas fa-star"></span>
+            <span class="fas fa-star"></span>
+        </div>
+    </div>
+    <div class="company_evaluate">
+        <div><span>商品评价</span><span class="evaluate_score">10</span><span class="evaluate_lever">高</span></div>
+        <div><span>物流评价</span><span class="evaluate_score">10</span><span class="evaluate_lever">高</span></div>
+        <div><span>售后服务</span><span class="evaluate_score">10</span><span class="evaluate_lever">高</span></div>
+
+    </div>
+    <div class="split_line"></div>
+    <div class="group_like_wrapper">
+    <div class="group_like">
+        <div class="enterComp"><i class="fas fa-home "></i><a>进店逛逛</a></div>
+        <div class="likeComp"><i class="fas fa-star " ></i>关注店铺</div>
+    </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+     var enterComp = document.getElementsByClassName("enterComp");
+     //设置鼠标样式
+     enterComp[0].style.cursor="pointer"
+     enterComp[0].onclick=function () {
+             window.open("http://www.baidu.com")
+     }
+</script>
+</body>
+</html>

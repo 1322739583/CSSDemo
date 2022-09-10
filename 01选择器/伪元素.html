@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            background-color: lightblue;
+        }
+        p::selection{
+            background-color: yellow;
+        }
+        div::before{
+            content: "【";
+        }
+        div::after{
+            content: "】";
+        }
+    </style>
+</head>
+<body>
+     <div>This is a text</div>
+     <p>However big or small your team is, our products will ensure that it always has a smooth and enjoyable experience when building and shipping your code, planning your work, and collaborating.
+         Whatever platform or language you work with, JetBrains has a development tool for you.</p>
+</body>
+</html>

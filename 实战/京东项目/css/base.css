@@ -1,0 +1,91 @@
+/*版心*/
+.w{
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?fs9vh0');
+    src:  url('../fonts/icomoon.eot?fs9vh0#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?fs9vh0') format('truetype'),
+    url('../fonts/icomoon.woff?fs9vh0') format('woff'),
+    url('../fonts/icomoon.svg?fs9vh0#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+header{
+    background-color: #0A0C12;
+}
+
+a{
+    text-decoration: none;
+    color: #9FA0A0;
+}
+
+a:hover{
+    color: #e33333;
+}
+
+.c_e3{
+    color:#E34F4F!important;
+}
+
+
+/*ul默认是有padding，非常的难看*/
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_bar{
+    height: 30px;
+    line-height: 30px;
+    background-color:#E3E4E5;
+}
+
+.nav_bar ul li{
+    font-size: 12px;
+    float: left;
+    color: #9FA0A0;
+    font-family:icomoon;
+}
+
+.nav_bar {
+    font-size: 12px;
+    color: #9FA0A0;
+}
+
+.tips{
+    margin-right: 10px;
+}
+
+.space{
+    height: 10px;
+    width: 1px;
+    margin: 12px 10px 0;
+    background-color: #ccc;
+}
+.city{
+    color:#E34F4F;
+    font-style: normal;
+}
+
+.nav_bar div{
+    width: 1190px;
+    margin: 0 auto;
+}
+
+

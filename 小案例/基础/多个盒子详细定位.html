@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style rel="stylesheet">
+        .box1{
+          height: 100px;
+          width: 100px;
+          background-color: lightgreen;
+          float: left;
+        }
+        .box2{
+          height: 100px;
+          width: 100px;
+          background-color: lightblue;
+          display: inline-block;
+          float: left;
+        }
+        .box3{
+          height: 100px;
+          width: 100px;
+          display: inline-block;
+          background-color: lightsalmon;
+          float: left;
+        }
+
+        /**
+         * 必须固定宽度才可以,要想自适应，不可以用inline-block,而是要用table
+         */
+        .main{
+            background-color: orange;
+            display: table;
+
+            margin: 0 auto;
+        }
+
+        .main_wrapper{
+
+
+            background-color: #0A0C12;
+
+        }
+
+        .clearfix::before,.clearfix::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="main_wrapper clearfix">
+   <div class="main clearfix">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+   </div>
+</div>
+
+</body>
+</html>

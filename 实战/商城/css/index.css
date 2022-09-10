@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+#header {
+  height: 200px;
+  width: 100%;
+  background-color: lightgreen;
+}
+#nav_bar {
+  height: 40px;
+  line-height: 40px;
+  background-color: lightblue;
+  display: table;
+  margin: 0px auto;
+}
+a {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #000;
+}
+/*# sourceMappingURL=index.css.map */
