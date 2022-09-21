@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style rel="stylesheet">
+        #tabbar {
+            display: flex;
+            position: fixed;
+            background-color: #f6f6f6;
+
+            text-align: center;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .tabbar-item{
+            height: 49px;
+            font-size: 20px;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="tabbar">
+        <div class="tabbar-item">首页</div>
+        <div class="tabbar-item">分类</div>
+        <div class="tabbar-item">购物车</div>
+        <div class="tabbar-item">我的</div>
+    </div>
+</div>
+<script type="text/javascript">
+    var app = new Vue({
+        el: "#box",
+        data: {
+            message: "hello",
+            citys: ["北京", "上海", "广州", "深圳"],
+            letters: ["A", "B", "C", "D", "E"],
+            numbers: [1, 2, 3, 4, 5]
+        },
+        methods: {}
+    })
+</script>
+
+</body>
+</html>

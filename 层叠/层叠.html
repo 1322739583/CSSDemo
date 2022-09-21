@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style rel="stylesheet">
+        #box {
+
+        }
+
+        #nav_header{
+            padding: 0;
+            margin-bottom: 10px;
+
+        }
+
+
+
+
+        #nav_list{
+            list-style-type: none;
+            text-decoration: none;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        #nav_list li{
+            display: inline-block;
+            padding: 5px;
+            margin: 0;
+            background-color: lightgreen;
+            border-radius: 2px;
+        }
+
+        #nav_list:nth-child(4){
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box">
+   <h1 id="nav_header">欢迎加入前端大家庭</h1>
+    <ul id="nav_list">
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>VUE</li>
+        <li>WEB</li>
+    </ul>
+</div>
+<script type="text/javascript">
+    var app = new Vue({
+        el: "#box",
+        data: {
+            message: "hello",
+            citys: ["北京", "上海", "广州", "深圳"],
+            letters: ["A", "B", "C", "D", "E"],
+            numbers: [1, 2, 3, 4, 5]
+        },
+        methods: {}
+    })
+</script>
+
+</body>
+</html>
