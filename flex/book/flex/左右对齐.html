@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!--<link rel="stylesheet" href="./xxx.css">-->
+
+    <style rel="stylesheet">
+        #box {
+            /*display: flex;*/
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+        /*ul:nth-last-child{*/
+        /*    margin-left: auto;*/
+        /*}*/
+        .right-item{
+            margin-left: auto;
+        }
+        .box1{
+
+            /*width: 200px;*/
+            height: 200px;
+
+            background-color: lightsalmon;
+        }
+        .content{
+            display: flex;
+        }
+        .box1{
+            flex-basis: 20%;
+            flex-grow: 0.6;
+            background-color: lightblue;
+        }
+        .box2{
+            flex-basis: 20%;
+            flex-grow: 0.1;
+            background-color: lightgreen;
+        }
+        .box3{
+            flex-basis: 20%;
+            flex-grow: 0.6;
+
+            background-color: lightsalmon;
+        }
+        .content div{
+
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li class="right-item">item4</li>
+        <li >item5</li>
+    </ul>
+    <div class="box1">123</div>
+
+    <div class="content">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+</div>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

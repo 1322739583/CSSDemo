@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!--<link rel="stylesheet" href="./xxx.css">-->
+
+    <style rel="stylesheet">
+
+        :root {
+            --mainColor: lightblue;
+            --dot-radius: 10px;
+            --time-line-width: 2px;
+            --content-font-size: 18px;
+            --content-font-color: lightsalmon;
+            --content-height: 90px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .dot {
+            background-color: var(--mainColor);
+            height: calc(2 * var(--dot-radius));
+            width: calc(2 * var(--dot-radius));
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+
+        .time-wrapper {
+            display: flex;
+        }
+
+        .time {
+            color: var(--mainColor);
+        }
+
+        .content-wrapper {
+            border-left: var(--time-line-width) solid var(--mainColor);
+            color: var(--content-font-color);
+            height: var(--content-height);
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: calc(var(--dot-radius) - var(--time-line-width));
+            padding-left: 20px;
+            line-height: var(--content-height);
+            font-size: var(--content-font-size);
+
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="timeline" >
+    <div v-for="item in timeTrace">
+        <div class="time-wrapper">
+            <div class="dot"></div>
+            <span class="time">{{item.time}}</span>
+        </div>
+        <div class="content-wrapper">
+            <span>{{item.content}}</span>
+        </div>
+    </div>
+
+</div>
+
+
+<script type="text/javascript">
+    var app = new Vue({
+        el: "#timeline",
+        data: {
+            timeTrace: [
+                {
+                    time: new Date().toLocaleString(),
+                    content: "学习Vue"
+                },
+                {
+                    time: new Date().toLocaleString(),
+                    content: "学习CSS"
+                },
+                {
+                    time: new Date().toLocaleString(),
+                    content: "学习Html"
+                },
+                {
+                    time: new Date().toLocaleString(),
+                    content: "学习JS"
+                }
+            ]
+        },
+        methods: {
+
+        }
+    })
+</script>
+
+</body>
+</html>

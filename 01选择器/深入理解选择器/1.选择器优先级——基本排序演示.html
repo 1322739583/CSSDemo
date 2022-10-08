@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style rel="stylesheet">
+        div{
+            height: 150px;
+            width: 150px;
+            display: inline-block;
+            background-color: lightgreen !important;
+        }
+
+        .styleClass{
+            background-color: lightblue;
+        }
+
+        #styleId{
+            background-color: lightsalmon;
+        }
+
+    </style>
+</head>
+<!--使用说明：依次删除 !important,内联选择器,id选择器,类选择器,元素选择器,可以观察到颜色的具体变化-->
+<body>
+    <div id="styleId" class="styleClass" style="background-color: lightpink">
+
+    </div>
+</body>
+</html>

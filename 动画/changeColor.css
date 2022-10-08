@@ -1,0 +1,18 @@
+div {
+    width: 200px;
+    height: 200px;
+
+    background: white;
+    animation-name: changeColor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+/*这个颜色变化是渐变的，怎么变你是管不着的*/
+@keyframes changeColor {
+    from {
+        background: lightgreen;
+    }
+    to {
+        background: lightblue;
+    }
+}

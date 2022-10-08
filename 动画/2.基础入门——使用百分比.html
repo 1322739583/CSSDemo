@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+   <style rel="stylesheet">
+       div {
+
+           position: fixed;
+           width: 200px;
+           height: 200px;
+
+           top: 200px;
+           left:200px;
+
+           background: white;
+           animation-name: changeColor;
+           animation-duration: 5s;
+           /*animation-iteration-count: infinite;*/
+       }
+       /*这个颜色变化是渐变的，怎么变你是管不着的*/
+       @keyframes changeColor {
+           0% {
+               background: #7eff14;
+           }
+           25%{
+               transform: scale(2);
+           }
+           50%{
+               transform: scale(1);
+           }
+           100% {
+               background: blueviolet;
+           }
+       }
+   </style>
+
+
+</head>
+<body>
+
+<div id="box">
+
+</div>
+
+
+</body>
+</html>

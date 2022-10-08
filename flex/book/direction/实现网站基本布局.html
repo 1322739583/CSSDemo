@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!--<link rel="stylesheet" href="./xxx.css">-->
+
+    <style rel="stylesheet">
+        :root{
+            box-sizing: border-box;
+        }
+
+        *,
+        ::before,
+        ::after{
+            box-sizing: inherit;
+        }
+
+        /*body{*/
+        /*    margin: 0;*/
+        /*    padding: 0;*/
+        /*}*/
+        body * + * {
+            /*margin-top: 1.5rem;*/
+        }
+
+        /*ul{*/
+        /*    padding: 0;*/
+        /*    margin: 0;*/
+        /*}*/
+
+        .container {
+              width: 1000px;
+              /*height: 100vh;*/
+              overflow: hidden;
+              height: 500px;
+              margin: 0 auto;
+              background-color: darkseagreen;
+        }
+        .site-nav{
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: indianred;
+            border-radius: 3px;
+        }
+
+        .site-nav ul{
+            display: flex;
+            text-decoration: none;
+            list-style-type: none;
+
+        }
+
+
+        .site-nav ul li{
+            /*height: 40px;*/
+            background-color: darkorange;
+            /*margin: 10px 15px 10px 15px;*/
+            /*padding: 10px;*/
+            border-radius: 3px;
+            color: white;
+        }
+
+        /*.site-nav ul .nav-about{*/
+        /*    margin-left: auto;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="site-nav">
+        <ul>
+            <li class="nav-home">Home</li>
+            <li class="nav-docs">Docs</li>
+            <li class="nav-downloads">Downloads</li>
+            <li class="nav-price">Price</li>
+            <li class="nav-about">About</li>
+
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>
