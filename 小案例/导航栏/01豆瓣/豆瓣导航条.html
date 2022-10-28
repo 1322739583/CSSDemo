@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="/common/css/reset.css">
+
+    <style rel="stylesheet">
+        #content {
+            display: flex;
+            height: 28px;
+            background-color: #545652;
+        }
+
+        .nav-item a {
+            line-height: 28px;
+            font-size: 12px;
+            color: #d5d5d5;
+            margin: 0 12px;
+        }
+
+        .nav-item a:hover {
+            color: white;
+        }
+
+        .nav-download {
+            margin-left: auto;
+        }
+
+        .nav-login-reg {
+            margin-right: 24px;
+        }
+        #nav-appintro{
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+<!--实现要点说明
+1.到网站复制 纯文字列表 手动换行，这是准备工作
+2.通过emment快速包裹div和a
+这里存在小问题，就是生成的a是自带href的，每个都要回车。
+3.通过flex快速实现水平布局，并通过margin-left:auto把后两个div定位到右边。
+4.通过hover超链接的颜色改变，这里最好点击一下，看点击后有没有颜色变化。
+5.实现一个固定定位的下载导航功能。这个可以不实现还挺复杂的。
+-->
+
+<div id="content">
+    <div class="nav-item"><a href="">豆瓣</a></div>
+    <div class="nav-item"><a href="">读书</a></div>
+    <div class="nav-item"><a href="">电影</a></div>
+    <div class="nav-item"><a href="">音乐</a></div>
+    <div class="nav-item"><a href="">同城</a></div>
+    <div class="nav-item"><a href="">小组</a></div>
+    <div class="nav-item"><a href="">阅读</a></div>
+    <div class="nav-item"><a href="">FM</a></div>
+    <div class="nav-item"><a href="">时间</a></div>
+    <div class="nav-item"><a href="">豆品</a></div>
+    <div class="nav-item nav-download">
+        <a href="">下载豆瓣客户端</a>
+        <div id="nav-appintro" class="more-items">
+            <p class="appintro-title">豆瓣</p>
+            <p class="qrcode">扫码直接下载</p>
+            <div class="download">
+                <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=iOS">iPhone</a>
+                <span>·</span>
+                <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=Android" class="download-android">Android</a>
+            </div>
+        </div>
+    </div>
+    <div class="nav-item nav-login-reg"><a href="">登录/注册</a></div>
+</div>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

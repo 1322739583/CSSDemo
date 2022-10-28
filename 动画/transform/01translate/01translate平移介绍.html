@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>-->
+    <!--    <link rel="stylesheet" href="/common/css/reset.css">-->
+
+    <style rel="stylesheet">
+        #content {
+            display: inline-block;
+            border: 10px solid lightsalmon;
+            /*1.测试是否脱离文档流*/
+            /*transform: translateY(200px);*/
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            background-color: lightgreen;
+            /*2.测试x轴平移*/
+            /*transform: translate(200px);*/
+            transform: translate(100%,100%);
+        }
+
+        span {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+<span>123</span>
+<div id="content">
+    <div class="box"></div>
+</div>
+<span>abc</span>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

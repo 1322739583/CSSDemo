@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="/common/css/reset.css">
+
+    <style rel="stylesheet">
+        .btnMenu {
+              height: 30px;
+              width: 100px;
+              background-color: lightsalmon;
+              border-radius: 1em;
+              border: 1px solid #E3E4E5;
+              color: white;
+        }
+
+        .dropdown:hover{
+            display: block;
+        }
+
+        .btnMenu:hover {
+
+        }
+
+        ul:hover {
+            display: block;
+        }
+        ul{
+            display: none;
+        }
+
+        ul.is-open {
+            /*display: block;*/
+        }
+    </style>
+</head>
+<body>
+<div class="dropdown">
+    <button class="btnMenu">菜单</button>
+
+    <ul>
+        <li>
+            <a href="">特性</a>
+        </li>
+        <li>
+            <a href="">价格</a>
+        </li>
+        <li>
+            <a href="">支持</a>
+        </li>
+        <li>
+            <a href="">关于</a>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript">
+    (function () {
+        let dropdown = document.querySelector(".btnMenu")
+        let list = document.querySelector("ul")
+
+
+
+        dropdown.addEventListener("hover", function (e) {
+            console.log("mouseover")
+            list.classList.toggle("is-open")
+        })
+        // dropdown.addEventListener("mouseout", function (e) {
+        //     console.log("mouseleave")
+        //     list.classList.toggle("is-open")
+        // })
+    }())
+</script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!--<link rel="stylesheet" href="./xxx.css">-->
+
+    <style rel="stylesheet">
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .dropdown__toggle {
+            display: block;
+            padding: 0.5em 1em;
+            border: 1px solid hsl(280, 10%, 80%);
+            color: hsl(280, 30%, 60%);
+            background-color: white;
+            font: inherit;
+            text-decoration: none;
+            transition: background-color .1s linear;
+        }
+        .dropdown__toggle:hover {
+            background-color:  hsl(280, 15%, 95%);
+        }
+        .dropdown__drawer {
+            position: absolute;
+            display: none;
+            background-color: white;
+            width: 10em;
+        }
+        .dropdown.is-open .dropdown__drawer {
+            display: block;
+        }
+        .menu {
+            padding-left: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .menu > li + li > a {
+            border-top: 0;
+        }
+        .menu > li > a {
+            display: block;
+            padding: 0.5em 1em;
+            color: hsl(280, 40%, 60%);
+            background-color: white;
+            text-decoration: none;
+            transition: all .1s linear;
+            border: 1px solid hsl(280, 10%, 80%);
+        }
+        .menu > li > a:hover {
+            background-color: hsl(280, 15%, 95%);
+            color: hsl(280, 25%, 10%);
+        }
+    </style>
+</head>
+<body>
+<div class="dropdown" aria-haspopup="true">
+    <button class="dropdown__toggle">Menu</button>
+    <div class="dropdown__drawer">
+        <!--role写不写效果是一样的-->
+        <ul class="menu" role="menu" >
+            <li role="menuitem" >
+                <a href="/features">Features</a>
+            </li>
+            <li  role="menuitem">
+                <a href="/pricing">Pricing</a>
+            </li>
+            <li role="menuitem">
+                <a href="/support">Support</a>
+            </li>
+            <li role="menuitem">
+                <a href="/about">About</a>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+<p><a href="/read-more">Read more</a></p>
+<div tabindex="0" role="button"> Open Menu</div>
+<script type="text/javascript">
+    //立即执行函数只是为了区分作用域
+    (function () {
+        var toggle = document.getElementsByClassName('dropdown__toggle')[0];
+        var dropdown = toggle.parentElement;
+        toggle.addEventListener('click', function (e) {
+            //阻止默认行为
+            e.preventDefault();
+            //对一个类选择器做添加删除操作
+            dropdown.classList.toggle('is-open');
+        });
+    }());
+</script>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

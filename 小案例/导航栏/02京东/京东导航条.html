@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>-->
+    <link rel="stylesheet" href="/common/css/reset.css">
+    <link rel="stylesheet" href="../../icon/css/all.css">
+
+    <style rel="stylesheet">
+        .nav-bar {
+            width: 100%;
+            background-color: #E3E4E5;
+        }
+
+        .nav-contain {
+            display: flex;
+            height: 30px;
+            width: 1000px;
+            margin: auto;
+            border-bottom: 1px solid #ddd;
+            background-color: #E3E4E5;
+        }
+
+        .nav-left {
+            display: flex;
+        }
+
+        .nav-right {
+            display: flex;
+            margin-left: auto;
+            align-items: center;
+        }
+
+        .nav-item a {
+            margin: 0 10px;
+            line-height: 30px;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .nav-item a:hover {
+            color: #c81623;
+        }
+
+        .spacer {
+            width: 1px;
+            height: 10px;
+            background-color: #ccc;
+        }
+
+        .fa-angle-down {
+            font-size: 10px;
+            margin-left: 3px;
+        }
+
+        .fa-location-dot {
+            margin-right: 3px;
+            color: #e33333;
+        }
+    </style>
+</head>
+<!--说明
+1.从网站复制主要的导航文字，这里会出现问题，因为京东的导航使用了icon文字，会导致在浏览器显示的时候乱码，
+但在webstorm里面是显示正常的。但在vscode里面又是可以看到乱码的。
+2.京东的分割线是用背景画出来的细线。
+3.最麻烦的是文字icon,你必须手动设置位置，不可以从root位置开始查找。
+查找具体icon的时候到浏览器收藏夹打开官网搜索，然后慢慢找，最快也就这样了。
+还有一个问题是icon是有最小字体的，再小就没反应了。
+4.京东导航条的布局实际上是一个左右的布局，并不是一个居中的布局。
+5.淘宝的布局和京东的几乎是一样的，只是icon不一样而已，都是左右布局。
+-->
+<body>
+<div class="nav-bar">
+    <div class="nav-contain">
+        <div class="nav-left">
+            <div class="nav-item"><a href=""><i class="fa-solid fa-location-dot"></i>浙江</a></div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-item"><a href="">你好，请登录</a></div>
+            <div class="nav-item"><a href="">免费注册</a></div>
+            <span class="spacer"></span>
+            <div class="nav-item"><a href="">我的订单</a></div>
+            <span class="spacer"></span>
+            <div class="nav-item"><a href="">我的京东</a></div>
+            <span class="spacer"></span>
+            <div class="nav-item"><a href="">京东会员</a></div>
+            <span class="spacer"></span>
+            <div class="nav-item"><a href="">企业采购</a></div>
+            <span class="spacer"></span>
+            <div class="nav-item"><a href="">商家服务</a></div>
+            <span class="spacer"></span>
+            <div class="nav-item"><a href="">网站导航<i class="fas fa-angle-down"></i></a></div>
+            <span class="spacer"></span>
+            <div class="nav-item"><a href="">手机京东</a></div>
+            <span class="spacer"></span>
+            <div class="nav-item"><a href="">网站无障碍</a></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

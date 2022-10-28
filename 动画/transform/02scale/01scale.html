@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="/common/css/reset.css">
+
+    <style rel="stylesheet">
+        #content {
+            width: 100px;
+            height: 100px;
+            /*为了好看点*/
+            margin-top: 200px;
+            margin-left: 200px;
+            background-color: lightgreen;
+        }
+
+        /*1.一般都是鼠标悬浮的时候放大*/
+        #content:hover {
+            /*如果只设置一个值的话，并不是只缩放x轴，而是x,y轴都缩放这个值*/
+            /*transform: 02scale(1.2);*/
+            transform: scale(1.2,1.2);
+            /*设置的时间如果太长的话，会导致鼠标离开的时候动画非常的突兀*/
+            transition-property:transform;
+            transition-timing-function: ease-in;
+            transition-duration: 2s;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="content">
+</div>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

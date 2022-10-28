@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="/common/css/reset.css">
+
+    <style rel="stylesheet">
+
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: lightgreen;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+        }
+        /*这步非常的关键*/
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="dropdown">
+    <span>鼠标移动到我这！</span>
+    <div class="dropdown-content">
+        <p>菜鸟教程</p>
+        <p>www.runoob.com</p>
+    </div>
+</div>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="/common/css/reset.css">
+
+    <style rel="stylesheet">
+        .top{
+            border-bottom: 1px solid #f5f5f5;
+        }
+        .top-wrapper{
+            display: flex;
+            justify-content: space-between;
+            height: 41px;
+            width: 980px;
+            margin: 0 auto;
+        }
+
+        .top-wrapper .left{
+            display: flex;
+            align-items: center;
+            /*background-color: lightskyblue;*/
+
+        }
+
+        .top-wrapper .left .logo {
+
+        }
+        .top-wrapper .left .logo a{
+            display: block;
+            width: 150px;
+            background: url("./imgs/logo.png") no-repeat center center;
+            text-indent: -9999px;
+        }
+
+        .top-wrapper .right{
+            display: flex;
+            align-items: center;
+        }
+
+        .top-wrapper .right i{
+            height: 30px;
+            width: 30px;
+            /*还有这种骚操作？为什么要把图片连在一起？*/
+            background: url("imgs/title_sprite.png") no-repeat -30px 0;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div class="top">
+   <div class="top-wrapper">
+      <div class="left">
+          <div class="logo">
+              <a href="#">腾讯游戏</a>
+          </div>
+          <div>
+               <img src="imgs/recommend.jpg" alt="">
+          </div>
+      </div>
+       <div class="right">
+           <i></i>
+           <a href="">成长守护平台</a>
+           <a href="">腾讯游戏排行榜</a>
+       </div>
+   </div>
+</div>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>
