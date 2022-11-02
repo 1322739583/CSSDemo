@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="/common/css/reset.css">
+
+    <style rel="stylesheet">
+        #content {
+            width: 500px;
+            height: 500px;
+            border: 5px solid gold;
+            /*1.设置背景颜色*/
+            /*background-color: lightgreen;*/
+            /*2.设置背景图片*/
+            background-image: url("/common/img/javascript_small.jpg");
+            /*3.设置背景图是否平铺*/
+            /*可以通过很小的图片平铺实现比较好看的效果*/
+            /*background-repeat: no-repeat;*/
+            /*background-repeat: repeat-x;*/
+            background-repeat: repeat-y;
+            /*4.可以设置多张图片*/
+            /*background-image: url("/common/img/javascript_small.jpg"),url("/common/img/child_cow.jpg");*/
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+
+</div>
+<!--行内元素设置背景是无效的，因为不能设置宽高，所以默认height,width都为auto-->
+<!--<span>abc-->
+<!--</span>-->
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

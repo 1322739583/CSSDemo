@@ -1,0 +1,29 @@
+.nowrap_ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.box_border(@width:1px,@color:#cccccc){
+    border: @width solid @color;
+}
+
+#content {
+  .p1 {
+    width: 100px;
+    background-color: lightblue;
+
+    .nowrap_ellipsis();
+    //.box_border(10px,gold);
+    .box_border();
+  }
+
+  .p2 {
+    width: .p1[width];
+    background-color: lightgreen;
+
+    .nowrap_ellipsis();
+    //.box_border(10px,#ffbbcc);
+    .box_border();
+  }
+}

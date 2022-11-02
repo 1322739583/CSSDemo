@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="/common/css/reset.css">
+
+    <style rel="stylesheet">
+        #content {
+
+        }
+        /*1.通过伪类实现第一个字母大写，这样的好处，无论文本怎么边，第一个字母都可以大写。*/
+        .p1::first-letter{
+            font-size: 30px;
+        }
+        /*2.中文也是可以支持的*/
+        .p2::first-letter{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+    <p class="p1">The cascade is an algorithm that defines how user agents combine
+        property values originating from different sources.
+        The cascade defines the origin and layer that takes precedence
+        when declarations in more than one origin or cascade layer set
+        a value for a property on an element.</p>
+
+    <p class="p2">层叠是 CSS 的一个基本特征，它是一个定义了如何合并来自多个源的属性值的算法。
+        它在 CSS 处于核心地位，CSS 的全称层叠样式表正是强调了这一点。</p>
+</div>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

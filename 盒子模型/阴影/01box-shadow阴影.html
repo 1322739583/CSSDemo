@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="/common/css/reset.css">
+
+    <style rel="stylesheet">
+        #content {
+            width: 200px;
+            height: 200px;
+            margin-left: 100px;
+            margin-top: 100px;
+            background-color: lightgreen;
+            /*
+            格式：
+            box-shadow: inset <offset-x> <offset-y> <blur-radius> <spread-radius> <color>
+
+            一、inset 是否向内，一般不设置
+            二、<offset-x> <offset-y> x和y轴的偏移量
+            三、<blur-radius> 模糊度。单位也是px
+            四、<spread-radius> 扩散半径 阴影可以扩散一圈，但并不是特别好看。
+
+            官方还提供了生成shadow的工具
+            https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box-shadow_generator
+            第三方工具：这个比官方的好用。
+            https://html-css-js.com/css/generator/box-shadow/
+            */
+
+            /*1.默认颜色是黑色，没有模糊，非常的生硬*/
+            /*box-shadow: 5px 5px ;*/
+            /*2.添加模糊效果,和设置颜色*/
+            /*box-shadow: 5px 5px 5px lightsalmon;*/
+            /*3.可以向内阴影，用的非常少 */
+            /*  box-shadow:inset 5px 5px 5px gold ;*/
+            /*4.设置多层阴影*/
+            box-shadow: 5px 5px 5px gold, 10px 10px 5px lightgreen, 15px 15px 5px lightskyblue;
+
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+
+</div>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

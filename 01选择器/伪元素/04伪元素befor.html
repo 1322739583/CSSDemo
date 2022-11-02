@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="/common/css/reset.css">
+
+    <style rel="stylesheet">
+        #content {
+
+        }
+
+        .p1::before {
+            /*必须有，不然不显示图片*/
+            /*通过content url("xxx.jpg")的方式引入图片是不可以调整大小的*/
+            content: '';
+            /*必须为block或者inline-block才会显示*/
+            display: inline-block;
+            /*background和background-image都是一样的*/
+            background: url("child_cow.jpg");
+            /*background-size和height width要同时设置，不然只显示左上角一小部分*/
+            background-size: 100px 100px;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+    <p class="p1">The cascade is an </p>
+</div>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="/common/css/reset.css">
+
+    <style rel="stylesheet">
+        #box1 {
+           height: 100px;
+            background-color: lightgreen;
+        }
+        #box2 {
+            height: 100px;
+            background-color: gold;
+        }
+        span{
+            /*1.padding上下有效果但不占据空间*/
+            padding: 50px;
+            /*2.border上下有效果但不占据空间*/
+            border: 10px solid lightskyblue;
+            /*3.margin上下不生效，左右生效*/
+            /*margin: 100px;*/
+            background-color: lightsalmon;
+           /* 为什么要这样？主要原因还是为了满足“行内”这个要求，上下随便运动很容易不在一行。*/
+        }
+    </style>
+</head>
+<body>
+<div id="box1">
+
+</div>
+abc<span>123</span>xyz
+<div id="box2">
+
+</div>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

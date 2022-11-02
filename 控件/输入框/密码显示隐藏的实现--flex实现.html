@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!--    <link rel="stylesheet" href="/common/css/reset.css">-->
+
+    <style rel="stylesheet">
+        #content {
+
+        }
+
+        .show-pw {
+            width: 24px;
+            height: 24px;
+            line-height: 42px;
+            margin:0 10px;
+            /*margin-right: 10px;*/
+        }
+
+        input {
+            border: none;
+            outline: none;
+            height: 42px;
+            font-size: 14px;
+            background-color: gold;
+            /*margin-right: auto;*/
+            /*margin-right: 100px;*/
+        }
+
+        .box-account {
+            /*background-color: lightskyblue;*/
+            width: 300px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .box-password {
+            display: flex;
+            /*justify-content: flex-end;*/
+            align-items: center;
+            width: 300px;
+            /*background-color: lightgreen;*/
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .box-password input{
+            /*width: 300px;*/
+            flex-grow: 1;
+        }
+        .box-account input{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<div id="content">
+    <!-- 0.实现思路：
+     主要是密码可见隐藏图标部分，这部分通过flex-grow来实现是最方便的，让input充满剩余空间。
+     图标自然就到了最右边，并且边距都是可以自由设置的。
+     -->
+    <div class="box-account">
+        <label>
+            <input type="text" placeholder="输入用户名">
+        </label>
+        <!--        <img src="/common/img/eye_close.svg">-->
+    </div>
+    <br>
+    <div class="box-password">
+           <label for="abc">  </label>
+            <!-- 为了对齐 -->
+            <!--            密&nbsp;&nbsp;&nbsp;&nbsp;码：<input  type="password" placeholder="输入密码">-->
+            <input type="password"  id="abc" placeholder="输入密码">
+            <img class="show-pw" src="/common/img/user/eye_open.svg" alt="显示密码">
+    </div>
+</div>
+
+<script type="text/javascript">
+</script>
+</body>
+</html>
