@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="/common/css/reset.css">
+
+    <style rel="stylesheet">
+        body{
+
+        }
+
+        #header {
+           height: 84px;
+            background-color: #323235;
+        }
+        .header_wrapper{
+            display: flex;
+            justify-content: space-between;
+            width: 1300px;
+            height: 84px;
+            margin: 0 auto;
+            background-color: #E3E4E5;
+        }
+
+        .left{
+            display: flex;
+            height: 84px;
+        }
+
+        .right{
+            height: 84px;
+            background-color: gold;
+        }
+
+        .header_wrapper .left a img{
+            width: 200px;
+            height: 54px;
+        }
+
+        /*利用flex实现垂直居中*/
+        .header_wrapper .left a  {
+             align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+<div id="header">
+    <div class="header_wrapper">
+        <div class="left">
+           <a href="#">
+               <img src="imgs/header_logo.png" alt="header logo">
+           </a>
+        </div>
+        <div class="right">right</div>
+    </div>
+
+</div>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

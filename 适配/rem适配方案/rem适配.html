@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="/common/css/reset.css">
+
+    <style rel="stylesheet">
+        /*!*简单点的写法*!*/
+        /*@media (min-width: 320px)  {*/
+        /*    html {*/
+        /*        font-size: 16px;*/
+        /*    }*/
+        /*}*/
+
+        /*!**/
+        /*375px~414px*/
+        /**!*/
+        /*@media (min-width: 375px)  {*/
+        /*    html {*/
+        /*        font-size: 22px;*/
+        /*    }*/
+        /*}*/
+
+        /*!**/
+        /*414px~480px*/
+        /**!*/
+        /*@media (min-width: 414px){*/
+        /*    html {*/
+        /*        font-size: 26px;*/
+        /*    }*/
+        /*}*/
+
+
+        .content {
+            width: 2.667rem;
+            height: 2.667rem;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+
+</div>
+<script type="text/javascript">
+
+    function setRemUnit() {
+        let html = document.documentElement;
+        let htmlWidth = html.clientWidth;
+        let fontSize = htmlWidth / 10;
+        html.style.fontSize = fontSize + "px"
+    }
+
+    setRemUnit()
+    window.addEventListener("resize", setRemUnit)
+</script>
+
+</body>
+</html>

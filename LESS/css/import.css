@@ -1,0 +1,28 @@
+.nowrap_ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#header .p1 {
+  width: 100px;
+  background-color: lightblue;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+}
+#header .p2 {
+  width: 100px;
+  background-color: lightgreen;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+}
+#header {
+  width: 200px;
+  height: 200px;
+  background-color: lightgreen;
+  border: 1px solid #cccccc;
+}
+/*# sourceMappingURL=import.css.map */

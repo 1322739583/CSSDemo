@@ -1,0 +1,9 @@
+@main_color:#ffffff;
+.box{
+  @main_color:#cccccc;
+  span{
+     background-color: @main_color;
+     //使用的是这个作用域的
+     @main_color:#cccccc;
+  }
+}
