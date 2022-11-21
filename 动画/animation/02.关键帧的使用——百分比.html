@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- <link rel="stylesheet" href="/common/css/reset.css"> -->
+
+    <style rel="stylesheet">
+        body{
+            display: flex;
+            /*因为flex居中，宽高不能为auto，需要确定的值*/
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #666666;
+        }
+        #content {
+            width: 100px;
+            height: 100px;
+            background-color: #f6f6f6;
+            /*1.帧名字*/
+            animation-name: kf;
+            /*2.持续时间*/
+            animation-duration: 2s;
+        }
+
+        @keyframes kf {
+            from{
+                background-color: #f6f6f6;
+            }
+            to{
+                background-color: gold;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+
+</div>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>
