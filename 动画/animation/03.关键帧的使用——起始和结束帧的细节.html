@@ -18,38 +18,28 @@
             align-items: center;
             background-color: #666666;
         }
+
         #content {
             width: 100px;
             height: 100px;
-            background-color: #f6f6f6;
+            background-color: lightskyblue;
             /*帧名字*/
             animation-name: kf;
             /*持续时间*/
-            animation-duration: 2s;
+            animation-duration: 3s;
         }
 
-        /*1.上一个例子基础上改变了这里的内容*/
-        /*改变颜色和缩放*/
-        /*1.1顺序改变是没有关系的*/
+
         @keyframes kf {
-            /*开始*/
-            0%{
-                background-color: #f6f6f6;
-            }
-            25%{
-                background-color: #0984e3;
-            }
-            50%{
-                background-color: #2ed573;
-                transform: scale(1.2);
-            }
-            50%{
-                background-color: #f78c6c;
-            }
-            /*结束*/
+            /*1.如果没有起始帧，那么会自动把动画元素本来的样式作为起始帧的样式*/
+            /*0%{*/
+            /*    background-color: #f6f6f6;*/
+            /*}*/
+            /*2.如果没有结束帧，那么会自动把动画元素本来的样式作为结束帧的样式*/
             100%{
                 background-color: gold;
             }
+           /* 3.如果同时都没有起始结束帧，那么两个都会使用默认样式 */
         }
     </style>
 </head>

@@ -32,28 +32,27 @@
             /*帧名字*/
             animation-name: kf;
             /*持续时间*/
-            animation-duration: 2s;
+            animation-duration: 3s;
         }
 
 
         @keyframes kf {
-            /*没什么必要*/
-            /*0%{*/
-            /*    transform: translate(0, 0);*/
-            /*}*/
             25% {
                 transform: translate(300px, 0);
             }
             50% {
                 transform: translate(300px, 300px);
+                background: gold;
             }
             75% {
                 transform: translate(0px, 300px);
             }
-            /*没什么必要*/
-            /*100%{*/
-            /*    transform: translate(0, 0);*/
-            /*}*/
+
+            /*1.和css的选择器合并是类似的*/
+            25%,75%{
+                background-color: #2ed573;
+            }
+
         }
     </style>
 </head>
