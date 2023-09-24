@@ -5,20 +5,65 @@
     <title>Title</title>
     <!--<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <!--<link rel="stylesheet" href="/common/css/reset.css">-->
-    
+    <link rel="stylesheet" href="/common/css/reset.css">
+
     <style rel="stylesheet">
-             #content{
-                 
-             }
+        #content {
+            display: flex;
+            height: 45px;
+            justify-content: space-between;
+            background-color: #333;
+            font-size: 12px;
+            color: #fff;
+        }
+
+        .left {
+            display: flex;
+            margin-left: 40px;
+            line-height: 45px;
+        }
+        .index{
+            margin-right: 6px;
+        }
+        .app{
+            margin-left: 10px;
+            margin-right: 23px;
+            background-color: #ffcb6b;
+        }
+        .list{
+            position: relative;
+            display: flex;
+            width: 200px;
+            left:94px;
+            flex-direction: column;
+            background-color: #9497FF;
+            z-index: 9;
+        }
     </style>
 </head>
 <body>
 <div id="content">
+    <div class="top">
+        <div class="left">
+            <div class="index">网易首页</div>
+            <div class="app">应用
+
+            </div>
+            <div class="easyuse">进入关怀模式</div>
+        </div>
+
+        <div class="right">right</div>
+        <ul class="list">
+            <li>item1aaaaaaaa</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+        </ul>
+    </div>
 
 </div>
 <script type="text/javascript">
-   
+
 </script>
 
 </body>
