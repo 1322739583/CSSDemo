@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .box > li:hover {
+            background: lightpink;
+        }
+
+        .box > li {
+            float: left;
+            width: 100px;
+            height: 64px;
+            text-align: center;
+            line-height: 40px;
+            position: relative;
+        }
+
+        .box > li > ul {
+            display: none;
+            background-color: cadetblue;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 100vw;
+            /*display: flex; !* 添加这一行 *!*/
+        }
+
+        .box > li:hover > ul {
+            display: flex; /* 修改这一行 */
+        }
+
+        .box > li > ul > li {
+            flex: 1; /* 添加这一行 */
+            text-align: center;
+            height: 64px;
+        }
+
+        .box > li > ul > li:hover {
+            background: lightsalmon;
+        }
+
+    </style>
+</head>
+<body>
+<ul class="box">
+    <li>
+        Menu 1
+        <ul>
+            <li>Submenu 1</li>
+            <li>Submenu 2</li>
+            <li>Submenu 3</li>
+        </ul>
+    </li>
+    <li>
+        Menu 2
+        <ul>
+            <li>Submenu 4</li>
+            <li>Submenu 5</li>
+            <li>Submenu 6</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

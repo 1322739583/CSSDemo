@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    <script src="./lib/vue.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            width: 500px;
+            height: 40px;
+            background-color: yellow;
+            /* 水平居中 */
+            margin: 0 auto;
+        }
+
+        .box > li {
+            float: left;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .box > li > ul {
+            display: none;
+            background-color: cadetblue;
+        }
+
+        .box > li:hover ul {
+            display: block;
+        }
+
+        .box > li:hover {
+            background-color: lightpink;
+        }
+
+        .box > li > ul > li:hover {
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <ul class="box">
+        <li>上路
+            <ul>
+                <li>亚瑟</li>
+                <li>项羽</li>
+                <li>花木兰</li>
+                <li>钟无艳</li>
+                <li>夏侯惇</li>
+            </ul>
+        </li>
+        <li>下路
+            <ul>
+                <li>鲁班七号</li>
+                <li>狄仁杰</li>
+                <li>李元芳</li>
+                <li>百里守约</li>
+                <li>后裔</li>
+            </ul>
+        </li>
+        <li>中路
+            <ul>
+                <li>安其拉</li>
+                <li>小乔</li>
+                <li>王昭君</li>
+                <li>小妲己</li>
+                <li>西施</li>
+            </ul>
+        </li>
+        <li>辅助
+            <ul>
+                <li>蔡文姬</li>
+                <li>孙膑</li>
+                <li>瑶妹</li>
+                <li>桑启</li>
+                <li>明世隐</li>
+            </ul>
+        </li>
+        <li>打野
+            <ul>
+                <li>孙悟空</li>
+                <li>李白</li>
+                <li>韩信</li>
+                <li>张飞</li>
+                <li>菲</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+</body>
+
+</html>

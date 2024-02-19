@@ -8,15 +8,15 @@
    <!--实现的效果就是滚动list的时候fixed固定的元素不会跟着滚动-->
     <style rel="stylesheet">
         #content-back {
-
             position: fixed;
-            left: 0;
-            right: 0;
-            top: 0;
+            /*height: 200px;*/
+            /*width: 200px;*/
+            left: 10%;
+            right: 10%;
+            /*top: 10%;*/
             bottom: 0;
             /*margin: auto;*/
             background-color: rgba(0, 0, 0, 0.5);
-
             font-size: 50px;
         }
         .content{
@@ -33,7 +33,7 @@
 <div id="content-back">
     fixed
 </div>
-<div class="content"></div>
+<!-- <div class="content"></div> -->
 <ul>
     <li>item1</li>
     <li>item2</li>

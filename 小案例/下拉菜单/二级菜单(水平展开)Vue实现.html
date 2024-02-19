@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <style>
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .box > li:hover {
+            background: lightpink;
+        }
+
+        .box > li {
+            float: left;
+            width: 100px;
+            height: 64px;
+            line-height: 64px;
+            text-align: center;
+            position: relative;
+        }
+
+        .box > li > ul {
+            display: none;
+            background-color: cadetblue;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 100vw;
+            /*display: flex; !* 添加这一行 *!*/
+        }
+
+        .box > li:hover > ul {
+            display: flex; /* 修改这一行 */
+        }
+
+        .box > li > ul > li {
+            flex: 1; /* 添加这一行 */
+            text-align: center;
+            height: 64px;
+            line-height: 64px;
+        }
+
+        .box > li > ul > li:hover {
+            background: lightsalmon;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+<ul class="box">
+    <li v-for="(menu,index) in menus">
+        {{menu.name}}
+        <ul v-show="menu.children.length!==0">
+            <li v-for="submenu in menu.children">{{submenu.name}}</li>
+        </ul>
+    </li>
+
+</ul>
+</div>
+</body>
+<script type="text/javascript">
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                message: "Hello",
+                menus: [
+                    {
+                        name: '上路',
+                        children: [
+                            {name: '上路1号', children: []},
+                            {name: '上路2号', children: []},
+                            {name: '上路3号', children: []},
+                            {name: '上路4号', children: []},
+                            {name: '上路5号', children: []},
+                        ]
+                    },
+                    {
+                        name: '下路',
+                        children: [
+                            {name: '下路1号', children: []},
+                            {name: '下路2号', children: []},
+                            {name: '下路3号', children: []},
+                        ]
+                    },
+                    {
+                        name: '中路',
+                        children: []
+                    },
+                    {
+                        name: '辅助',
+                        children: []
+                    },
+                    {
+                        name: '打野',
+                        children: []
+                    }
+                ]
+            }
+        }
+    })
+</script>
+</html>

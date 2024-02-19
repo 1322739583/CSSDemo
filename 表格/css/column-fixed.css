@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 16px;
+}
+
+.table-container {
+    overflow-x: auto;
+    border-right: 1px solid #333;
+    border-top: 1px solid #333;
+}
+
+th, td {
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    padding: 10px;
+}
+
+table {
+    border-spacing: 0;
+    width: max-content;
+}
+
+/*核心实现逻辑就这一行，实际上非常简单*/
+.fixed {
+    position: sticky;
+    z-index: 1;
+    background: lightgreen;
+}
+
+.fixed-left {
+    left: 0;
+}
+
+.fixed-right {
+    right: 0;
+    border-left: none;
+}
+
+/*除固定列别的列都是100vh,这个你可以随便设置*/
+th:not(.fixed) {
+    width: 100vw;
+}
+
+/*倒数第几个同级兄弟*/
+th:nth-last-of-type(2)
+td:nth-last-of-type(2) {
+    border-right: 1px solid #333;
+}
