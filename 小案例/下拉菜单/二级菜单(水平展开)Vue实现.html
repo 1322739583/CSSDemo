@@ -54,15 +54,14 @@
 </head>
 <body>
 <div id="app">
-<ul class="box">
-    <li v-for="(menu,index) in menus">
-        {{menu.name}}
-        <ul v-show="menu.children.length!==0">
-            <li v-for="submenu in menu.children">{{submenu.name}}</li>
-        </ul>
-    </li>
-
-</ul>
+    <ul class="box">
+        <li v-for="(menu,index) in menus">
+            {{menu.name}}
+            <ul v-show="menu.children.length!==0">
+                <li v-for="submenu in menu.children">{{submenu.name}}</li>
+            </ul>
+        </li>
+    </ul>
 </div>
 </body>
 <script type="text/javascript">
