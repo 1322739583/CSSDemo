@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .icon-delete {
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJ9JREFUeNpiVGn7z4AFsAFxNxDHQvmLgbgUiH+hK2RhwA66gDgPiQ9i/wDicnSFTDgMgNlsA8S2UHYKNoUgFxwBYmscBh1BYgsBMbp/j+ByAbGAkQXqTJjJjERqhKm3YcIh+Z8Am2AgEg1GDaCiAe+gtDU0LTAipQt0tjWyHiak3AZLuv8JYFjynoOcG8ugpoMykSABV7+HWlgL4gAEGAB4CiT14uCL4QAAAABJRU5ErkJggg==) no-repeat center;
+            font-size: 0;
+            margin: auto;
+
+            position: relative;
+        }
+
+        .icon-delete::before,
+        .icon-delete::after {
+
+            /*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJ9JREFUeNpiVGn7z4AFsAFxNxDHQvmLgbgUiH+hK2RhwA66gDgPiQ9i/wDicnSFTDgMgNlsA8S2UHYKNoUgFxwBYmscBh1BYgsBMbp/j+ByAbGAkQXqTJjJjERqhKm3YcIh+Z8Am2AgEg1GDaCiAe+gtDU0LTAipQt0tjWyHiak3AZLuv8JYFjynoOcG8ugpoMykSABV7+HWlgL4gAEGAB4CiT14uCL4QAAAABJRU5ErkJggg==) no-repeat center;*/
+        }
+
+        table {
+            border-spacing: 1px;
+            border: 1px solid #9497FF;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            /*这个属性只对border有效，对padding是无效的*/
+            box-sizing: content-box;
+            padding: 20px 30px;
+            border: 1px solid #9497FF;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>标题1</th>
+        <th>标题2</th>
+        <th>操作</th>
+    </tr>
+    <tr>
+        <td>内容1</td>
+        <td>内容2</td>
+        <td><a title="123" data-title="删除" class="icon-delete" href=""></a></td>
+    </tr>
+    <tr>
+        <td>内容3</td>
+        <td>内容4</td>
+        <td>
+            <svg t="1709435362615" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 p-id="1624" width="30" height="30">
+                <path d="M256 298.666667h512v554.666666H256V298.666667z m85.333333 85.333333v384h341.333334V384H341.333333z m42.666667 85.333333h85.333333v213.333334H384v-213.333334z m170.666667 0h85.333333v213.333334h-85.333333v-213.333334zM213.333333 298.666667h597.333334v85.333333H213.333333V298.666667z m170.666667-128h256v85.333333H384V170.666667z"
+                      fill="#1296db" p-id="1625"></path>
+            </svg>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
